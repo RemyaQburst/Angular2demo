@@ -1,0 +1,16 @@
+<table>
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>title</td>
+			<td>Desc</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="#v of videos" (click)="ClickMethod(v)">
+			<td>{{v.id}}</td>
+			<td>{{v.title}}</td>
+			<td>{{v.desc}}</td>
+		</tr>
+	</tbody>
+</table>
